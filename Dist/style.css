@@ -1,10 +1,90 @@
 * {
-    font-family: poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-padding-top: 60px;
+}
+.navbar-brand {
+    font-weight: 700 !important;
+}
+.navbar i:hover{
+    cursor: pointer;
+}
+
+.fa-brands {
+    color: white;
+}
+
+@media (max-width: 991px) {
+.navbar-collpase {
+    text-align: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+html {
+    scroll-padding-top: 130px;
+}
+
+#col_service {
+    display: flex;
+    flex: 1;
+}
+
+.service img {
+    width: 100px;
+}
+
+#navbar {
+    transition: 0.3s ease;
+}
+#navbar.scrolled {
+    background-color: #0d6efd;
+}
 }
 
 .hero {
-    background-image: url(../assets/hero.jpg);
-    background-repeat: no-repeat;
+    position: relative;
+    background: url(../assets/hero.jpg) no-repeat center/cover;
     width: 100%;
     height: 100vh;
+    display: flex; /* optional, keeps layout flexible */
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: white; /* ensure text is visible */
+    z-index: 1;
+}
+
+/* dark overlay that does NOT affect text */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* adjust opacity for darkness */
+    z-index: 0;
+}
+
+/* ensure hero content stays above the overlay */
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.project img {
+    height: 250px;
+    transition: 0.3s ease;
+}
+
+.project img:hover {
+    scale: 1.02;
 }
