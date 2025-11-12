@@ -1,10 +1,17 @@
 * {
     font-family: "Poppins", sans-serif;
+    margin: 0; padding: 0; box-sizing: border-box;
 }
 
 html {
     scroll-padding-top: 60px;
+    scroll-behavior: smooth;
 }
+
+.navbar {
+    background-color: rgba(70, 70, 70, 0.589);
+}
+
 .navbar-brand {
     font-weight: 700 !important;
 }
@@ -88,3 +95,59 @@ html {
 .project img:hover {
     scale: 1.02;
 }
+
+h6 {
+    font-size: large;
+}
+
+
+.accordion button{
+    background-color: #202020;
+    color: white;
+    
+}
+/* Closed accordion button */
+.accordion-button.collapsed {
+  background-color: #303030; /* gray or your color */
+  color: #fff;
+}
+
+/* Open accordion button (the shown one) */
+.accordion-button:not(.collapsed) {
+  background-color: #313131; /* your preferred color */
+  color: #fff;
+  box-shadow: none; /* optional: removes the default blue outline */
+}
+
+/* Optional: adjust hover/focus color */
+.accordion-button:not(.collapsed):hover,
+.accordion-button:not(.collapsed):focus {
+  background-color: #303030; /* slightly darker shade */
+}
+
+  /* The main content takes all available space */
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #525252;
+    text-align: center;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+    /* font-size: 14px; */
+    color: #b9b9b9;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
