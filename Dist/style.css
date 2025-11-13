@@ -100,6 +100,9 @@ h6 {
     font-size: large;
 }
 
+.faq {
+  margin-bottom: 100px;
+}
 
 .accordion button{
     background-color: #202020;
@@ -160,7 +163,7 @@ footer {
     display: flex;
     align-items: center;
     background: white;
-    border-radius: 9999px;
+    border-radius: 100px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 0.25rem;
   }
@@ -171,14 +174,14 @@ footer {
     outline: none;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    border-radius: 9999px;
+    border-radius: 100px;
   }
   
   footer form button {
     background: #bfc7c2;
     color: rgb(231, 224, 224);
     border: none;
-    border-radius: 9999px;
+    border-radius: 100px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 0.9rem;
