@@ -125,29 +125,98 @@ h6 {
   background-color: #303030; /* slightly darker shade */
 }
 
-  /* The main content takes all available space */
-  .content {
+  
+footer {
+    background: #272727;
+    border-top: 1px solid #e5e7eb;
+    padding: 3rem 1.5rem;
+    color: #374151;
+    font-family: 'Inter', sans-serif;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  footer h1 {
+    color: #b9c5d3;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer p {
+    color: #a5acb3;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer form {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 9999px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0.25rem;
+  }
+  
+  footer form input {
     flex: 1;
-    padding: 20px;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 9999px;
   }
   
-  /* Footer styling */
-  footer {
-    background-color: #525252;
-    text-align: center;
-    padding: 100px;
-    font-family: Arial, sans-serif;
-    /* font-size: 14px; */
-    color: #b9b9b9;
-    width: 100%;
+  footer form button {
+    background: #bfc7c2;
+    color: rgb(231, 224, 224);
+    border: none;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
   }
   
-  footer a {
-    color: #007bff;
+  footer form button:hover {
+    background: #6d7570;
+  }
+  
+  footer h3 {
+    font-weight: 600;
+    color: #bdc4ce;
+    margin-bottom: 0.75rem;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer ul li a {
     text-decoration: none;
+    color: #a5acb3;
+    font-size: 20px;
+    transition: color 0.2s ease;
   }
   
-  footer a:hover {
-    text-decoration: underline;
+  footer ul li a:hover {
+    color: #c8d3cc;
   }
   
+  .Dzak {
+    margin-top: 100px;
+    color: #6d7570;
+  }
